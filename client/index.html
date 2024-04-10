@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Model Prediction</title>
+  </head>
+  <body>
+    <h2>Input Features</h2>
+    <form id="predictionForm">
+      <input type="text" id="tau1" placeholder="tau1" required /><br />
+      <input type="text" id="tau2" placeholder="tau2" required /><br />
+      <input type="text" id="tau3" placeholder="tau3" required /><br />
+      <input type="text" id="tau4" placeholder="tau4" required /><br />
+      <input type="text" id="p1" placeholder="p1" required /><br />
+      <input type="text" id="p2" placeholder="p2" required /><br />
+      <input type="text" id="p3" placeholder="p3" required /><br />
+      <input type="text" id="p4" placeholder="p4" required /><br />
+      <input type="text" id="g1" placeholder="g1" required /><br />
+      <input type="text" id="g2" placeholder="g2" required /><br />
+      <input type="text" id="g3" placeholder="g3" required /><br />
+      <input type="text" id="g4" placeholder="g4" required /><br />
+      <button type="button" onclick="predict()">Predict</button>
+    </form>
+    <h3>Prediction Result:</h3>
+    <div id="predictionResult"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
