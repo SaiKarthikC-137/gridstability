@@ -1,0 +1,49 @@
+/* src/components/PredictionForm.module.css */
+.formContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .predictionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputField {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .predictButton {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .predictButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .predictionResult {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
