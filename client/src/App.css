@@ -1,11 +1,13 @@
 .App {
   display: flex;
-  height: 100vh;
+  flex-direction: row;
+  min-height: 100vh;
+  align-items: stretch;
 }
+
 
 main {
   flex-grow: 1;
-  display: flex;
-  padding: 0;
-  overflow: hidden;
+  overflow: auto; /* This allows scrolling if content exceeds viewport */
+  padding: 20px;
 }

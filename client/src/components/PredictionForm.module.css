@@ -1,58 +1,64 @@
-/* src/components/PredictionForm.module.css */
 .formContainer {
-    max-width: 800px; /* Adjusted for better layout */
-    margin: auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-  }
-  
-  .predictionForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .inputGroup {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 10px; /* Spacing between label and input field */
-  }
-  
-  .inputLabel {
-    width: 50px; /* Fixed width for alignment */
-    text-align: right; /* Right-align text to be closer to input field */
-    font-weight: bold;
-  }
-  
-  .inputField {
-    flex: 1; /* Takes up remaining space */
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  .predictButton {
-    padding: 10px;
-    font-size: 18px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .predictButton:hover {
-    background-color: #0056b3;
-  }
-  
-  .predictionResult {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
+  width: 100%; /* Adjust width as needed */
+  max-width: 800px; /* Keeps the form within a reasonable size */
+  margin: 20px auto; /* Centers the form and adds vertical spacing */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  overflow: hidden; /* Prevents this container from scrolling independently */
+}
+.predictionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  /* Increased gap for better visual separation */
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputLabel {
+  width: 80px;
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.inputField {
+  flex: 1;
+  flex-grow: 1;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.predictButton {
+  padding: 12px; /* More padding for better clickability */
+  font-size: 18px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.predictButton:hover {
+  background-color: #0056b3;
+}
+
+.predictionResult {
+  color: #000;
+  background-color: #fff;
+  padding: 15px;  /* More padding for visibility */
+  margin-top: 20px;  /* More margin to separate from the button */
+  border: 2px solid #007bff;  /* More visible border color */
+  visibility: visible;
+  opacity: 1;
+}
