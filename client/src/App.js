@@ -1,22 +1,26 @@
 import React from "react";
-import { useEffect } from "react";
-import "./App.css"; // This imports the main stylesheet, keep it if you have global styles
-import PredictionForm from "./components/PredictionForm"; // Import the PredictionForm component
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import PredictionForm from "./components/PredictionForm";
+import ModelAnalysis from "./components/ModelAnalysis";
+import Chatbot from "./components/Chatbot";
+import Sidebar from "./components/Sidebar";
 
 function App() {
-  useEffect(() => {
-    document.title = "Smart Grid Stability Prediction";
-  }, []);
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <h1>Model Predictor</h1>
-      </header> */}
-      <h1>Smart Grid Stability Prediction</h1>
-      <main>
-        <PredictionForm />
-      </main>
-    </div>
+    <Router>
+      <div className="App">
+        <Sidebar />
+        <main>
+          <Routes>
+            <Route path="/" element={<PredictionForm />} />
+            <Route path="/model-analysis" element={<ModelAnalysis />} />
+            <Route path="/chatbot" element={<Chatbot />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
