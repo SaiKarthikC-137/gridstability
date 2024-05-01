@@ -47,8 +47,12 @@ function PredictionForm() {
       <form className={styles.predictionForm}>
         {Object.keys(inputs).map((key) => (
           <div key={key} className={styles.inputGroup}>
+            <label htmlFor={key} className={styles.inputLabel}>
+              {key.toUpperCase()}
+            </label>
             <input
               type="text"
+              id={key}
               name={key}
               placeholder={key.toUpperCase()}
               value={inputs[key]}
